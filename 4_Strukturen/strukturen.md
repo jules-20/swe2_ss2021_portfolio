@@ -14,3 +14,20 @@ struct student {
 	char studWohnort[50];
 };
 ```
+
+Um mit den Variablen in der Struktur arbeiten zu können, kannein Objekt bzw. eine Variable der Struktur erzeugt werden. 
+Dafür wird wieder struct, danach der Name der Struktur und anschließend der Name der Variable angegeben. 
+Der Zugriff auf die Elemente einer Struktur erfolgt über die Variable der Struktur, einem Punkt und anschließend der Variablen innerhalb der Struktur.
+
+```C
+// Variable der Struktur deklarieren
+struct student studentTheo;
+
+// Zugriff auf die Elemente
+strcpy(studentTheo.studName, "Theo Huber");
+strcpy(studentTheo.studFachbereich, "Mathematik");
+studentTheo.studMatrikelnummer = 235879;
+strcpy(studentTheo.studWohnort, "Buxtehude");
+
+printf("Name: %s\n", studentTheo.studName);
+```
