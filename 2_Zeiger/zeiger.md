@@ -10,7 +10,6 @@ Ein Zeiger speichert nur die Adresse einer anderen Variablen und leitet somit di
 
 
 **Beispiel:**
-
 Im ersten Schritt wird eine Variable deklariert und initialisiert, in diesem Beispiel die Variable "zahl" vom Typ Integer und dem Wert 9.
 Anschließend wird ein Zeiger mit dem Namen "zeiger" erstellt. Wichtig ist hierbei zu beachten,
 dass der Pointer vom gleichen Datentyp ist, wie die Variable, auf die gezeigt werden soll.
