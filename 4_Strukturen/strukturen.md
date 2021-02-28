@@ -1,10 +1,10 @@
 
-Zum Gruppieren von Variablen, die in einem thematisch in einem Zusammenhang stehen, werden **Strukturen** bzw. structs verwendet.
+Zum Gruppieren von Variablen, die thematisch in einem Zusammenhang stehen, werden **Strukturen** bzw. structs verwendet.
 Die Struktur wird mit dem Schlüsselwort struct eingeleitet.
 Anschließend wird der Name der Struktur definiert, wie etwa in diesem Beispiel "student".
-In dem Block { } werden nun alle Variablen definiert.
-Um dies noch besser zu verdeutlichen, ist es auch möglich, einen Prefix für alle Variablennamen zu verwenden.
-Alle Variablen, welche den Studenten darstellen, beginnt beispielsweise mit "stud".
+In dem Block { } werden nun alle Variablen zusammengefasst.
+Um die Zusammengehörigkeit noch zu verdeutlichen, kann ein Prefix für alle Variablennamen verwendet.
+Alle Variablen, welche den Studenten darstellen, beginnen beispielsweise mit "stud".
 
 ```C
 struct student {
@@ -15,9 +15,10 @@ struct student {
 };
 ```
 
-Um mit den Variablen in der Struktur arbeiten zu können, kannein Objekt bzw. eine Variable der Struktur erzeugt werden. 
-Dafür wird wieder struct, danach der Name der Struktur und anschließend der Name der Variable angegeben. 
-Der Zugriff auf die Elemente einer Struktur erfolgt über die Variable der Struktur, einem Punkt und anschließend der Variablen innerhalb der Struktur.
+Um mit den Variablen in der Struktur arbeiten zu können, kann ein Objekt bzw. eine Variable der Struktur erzeugt werden. 
+Dafür wird struct, der Name der Struktur und anschließend der Name der Variable angegeben. 
+Der Zugriff auf die Elemente einer Struktur ist möglich über die Variable der Struktur, einem Punkt und anschließend der 
+Variablen innerhalb der Struktur.
 
 ```C
 // Variable der Struktur deklarieren
@@ -31,3 +32,7 @@ strcpy(studentTheo.studWohnort, "Buxtehude");
 
 printf("Name: %s\n", studentTheo.studName);
 ```
+
+Quelle:
+
+1. Fischer E.: Zeiger in C. C-HowTo (2008). Online: https://www.c-howto.de/tutorial/strukturierte-datentypen/strukturen/, Zugriff: 28-02-2021.
