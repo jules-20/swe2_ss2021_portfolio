@@ -1,6 +1,5 @@
-Zeiger werden bevorzugt verwendet, wenn etwa bei großen Datenmengen verwendet.
 Wenn große Datenmengen in Funktionen bearbeitet werden, geht dies stark zu Lasten der Performance und des Speicherplatzes.
-Deswegen werden Zeiger eingesetzt.
+Um dies zu umgehen, werden Zeiger bzw. Pointer eingesetzt.
 
 Die Daten liegen in einem Speicher vor. Jeder Speicher hat eine spezifische Adresse.
 Ein Zeiger "zeigt" nun auf diese Daten, indem ihm die Adresse des Speicherortes zugewiesen wird.
