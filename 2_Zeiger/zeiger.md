@@ -12,13 +12,18 @@ Ein Zeiger speichert nur die Adresse einer anderen Variablen und leitet somit di
 
 **Beispiel:**
 
-Wir erstellen zuerst eine Variable und setzen sie auf einen Wert. Danach erstellen wir einen Zeiger, der auf die Variabel zeigen soll. Ein Zeiger sollte vom gleichen Datentyp sein, wie die Variable, auf die er zeigt. Einen Zeiger erstellen wir, indem wir bei der Deklaration den Namen mit einem Stern * beginnen. Danach existiert dieser Zeiger, allerdings zeigt er auf keinen sinnvollen Wert. Wir müssen ihn also noch auf die Adresse der Variablen setzen. Diese erhalten wir mit dem Kaufmanns-Und &.
-
+Im ersten Schritt wird eine Variable deklariert und initialisiert, in diesem Beispiel die Variable "zahl" vom Typ Integer und dem Wert 9.
+Anschließend wird ein Zeiger mit dem Namen "zeiger" erstellt. Wichtig ist hierbei zu beachten,
+dass der Pointer vom gleichen Datentyp ist, wie die Variable, auf die gezeigt werden soll.
+Der Zeiger charakterisiert sich bei der Deklarierung durch das Asterisk-Zeichen mit dem der Variablenname beginnt.
+Nach der Deklaration zeigt der Pointer noch auf keinen sinnvollen Wert.
+Dem Pointer wird nun der Speicherort der Variable "zahl" zugewiesen. Wichtig ist hierbei der das Kaufmanns-Und & vor dem Variablennamen.
+Ausgegeben wird der Wert der Variable, in dem der Pointername beginnend mit dem Asterisk-Zeichen angegeben wird.
 
 
 ```C
-int zahl = 7;
-int *zeiger;
-zeiger = &zahl;
-printf("Zeiger-Wert: %d\n", *zeiger);
+int zahl = 9; // Deklariere und initialisiere Variable
+int *zeiger; // Deklariere Pointer vom gleichen Datentyp
+zeiger = &zahl; // Weise Pointer die Adresse der Variable zu 
+printf("Zeiger-Wert: %d\n", *zeiger); // Greife auf Wert der Variable via Pointer
 ```
