@@ -8,7 +8,7 @@ Zudem wird der Datentyp size_t verwendet. Dieser ist vom Typ long int und wird f
 Angabe einer Datengröße in Byte verwendet. Die Funktion sizeof liefert bei Übergabe eines 
 Datentyps dessen benötigte Speichergröße in Byte. Der Datentyp des Rückgabewertes ist size_t.
 
-Mit Memory Allocation wird zur Laufzeit des Programms Speicherplatz reserviert. 
+Mit **Memory Allocation**, kurz malloc, wird zur Laufzeit des Programms Speicherplatz reserviert. 
 Mit dem Parameter size wird die Größe des Speicherbedarfs in Byte übergeben. 
 Der Rückgabewert ist ein void-Zeiger auf den Anfang des Speicherbereichs oder ein NULL-Zeiger, 
 wenn kein freier Speicher mehr zur Verfügung steht. 
@@ -51,7 +51,7 @@ int main() {
 
 ```
 
-Mit Cleared Memory Allocation wird ebenfalls Speicher reserviert, allerdings nicht nach Bytes, sondern nach Elementen. 
+Mit **Cleared Memory Allocation**, kurz calloc, wird ebenfalls Speicher reserviert, allerdings nicht nach Bytes, sondern nach Elementen. 
 Der erste Parameter bestimmt die Anzahl der Elemente, der zweite die Größe eines Elementes. 
 Grundsätzlich besteht kein großer Unterschied zu malloc, nur dass calloc alle Speicherstellen mit 0 initialisiert. 
 malloc lässt den Speicherinhalt unverändert. Die Rückgabewerte sind identisch zu malloc.
@@ -60,13 +60,13 @@ malloc lässt den Speicherinhalt unverändert. Die Rückgabewerte sind identisch
 void *calloc(size_t n, size_t size);
 ```
 
-Calloc, bei der Verwendung im obigen Beispiel:
+Calloc, wenn es im obigen Beispiel verwendet wird:
 
 ```C
 array = (int *) calloc(size, sizeof(int));
 ```
 
-Wenn Speicher reserviert wurde, sollte er auch wieder freigegeben werden, sobald er nicht mehr benötigt wird, um die Kapazitäten nicht zu erschöpfen. 
+Wenn Speicher reserviert wurde, sollte er auch wieder **freigegeben** werden, sobald er nicht mehr benötigt wird, um die Kapazitäten nicht zu erschöpfen. 
 Ist dadurch der Speicher komplett belegt, werden die Daten auf die Festplatte ausgelagert, was viel Zeit in Anspruch nimmt.
 Mit free kann nur Speicher freigegeben werden, welcher mit calloc oder malloc reserviert wurde und welcher vorher noch nicht freigegeben wurde.
 
