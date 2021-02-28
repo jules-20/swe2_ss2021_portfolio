@@ -10,7 +10,7 @@ Die Daten werden werden durch Variablen repräsentiert.
 Ein Zeiger speichert nur die Adresse einer anderen Variablen und leitet somit die Anfrage auf einen Wert weiter.
 
 
-Beispiel:
+**Beispiel:**
 
 Wir erstellen zuerst eine Variable und setzen sie auf einen Wert. Danach erstellen wir einen Zeiger, der auf die Variabel zeigen soll. Ein Zeiger sollte vom gleichen Datentyp sein, wie die Variable, auf die er zeigt. Einen Zeiger erstellen wir, indem wir bei der Deklaration den Namen mit einem Stern * beginnen. Danach existiert dieser Zeiger, allerdings zeigt er auf keinen sinnvollen Wert. Wir müssen ihn also noch auf die Adresse der Variablen setzen. Diese erhalten wir mit dem Kaufmanns-Und &.
 
