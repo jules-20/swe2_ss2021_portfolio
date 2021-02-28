@@ -16,8 +16,9 @@ Wir erstellen zuerst eine Variable und setzen sie auf einen Wert. Danach erstell
 
 
 
-
+```C
 int zahl = 7;
 int *zeiger;
 zeiger = &zahl;
 printf("Zeiger-Wert: %d\n", *zeiger);
+```
