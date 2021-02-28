@@ -89,6 +89,8 @@ int main() {
 }
 ```
 
+
+
 Quellen:
 
 1. Wolf J.: Dynamische Speicherverwaltung. Online: http://openbook.rheinwerk-verlag.de/c_von_a_bis_z/014_c_dyn_speicherverwaltung_001.htm, Zugriff: 28-02-2021.
