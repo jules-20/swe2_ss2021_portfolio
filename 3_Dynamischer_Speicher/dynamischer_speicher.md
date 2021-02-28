@@ -20,7 +20,7 @@ void *malloc(size_t size);
 
 In diesem Beispielprogramm hat der Benutzer durch eine Tastatureingabe die Möglichkeit, die Array-Größe zu bestimmen. 
 Mit sizeof(int) wird die benötigte Größe zur Speicherung eines Integer-Wertes erhalten. 
-Die Gesamtgröße ist abhängig von der Anzahl der Elemente. Die Einzelgröße wird dabei noch mit der gewünschten Anzahl multipliziert. 
+Die Gesamtgröße ist abhängig von der Anzahl der Elemente. Die Einzelgröße wird dabei mit der gewünschten Anzahl multipliziert. 
 Da malloc einen void-Zeiger liefert, muss in diesem Fall die Rückgabe gecastet werden mit (int *), um einen einen int-Zeiger zu erhalten.
 Das Casten ist nicht unbedingt notwendig, da der void-Zeiger automatisch in den richtigen Typ transformiert wird. 
 Es ist jedoch sauberer und erleichtert die Arbeit für die spätere Verwendung des Codes.
@@ -49,4 +49,41 @@ int main() {
 	return 0;
 }
 
+```
+
+Mit Cleared Memory Allocation wird ebenfalls Speicher reserviert, allerdings nicht nach Bytes, sondern nach Elementen. 
+Der erste Parameter bestimmt die Anzahl der Elemente, der zweite die Größe eines Elementes. 
+Grundsätzlich besteht kein großer Unterschied zu malloc, nur dass calloc alle Speicherstellen mit 0 initialisiert. 
+malloc lässt den Speicherinhalt unverändert. Die Rückgabewerte sind identisch zu malloc.
+
+```C
+void *calloc(size_t n, size_t size);
+```
+
+Calloc, bei der Verwendung im obigen Beispiel:
+
+```C
+array = (int *) calloc(size, sizeof(int));
+```
+
+Wenn Speicher reserviert wurde, sollte er auch wieder freigegeben werden, sobald er nicht mehr benötigt wird, um die Kapazitäten nicht zu erschöpfen. 
+Ist dadurch der Speicher komplett belegt, werden die Daten auf die Festplatte ausgelagert, was viel Zeit in Anspruch nimmt.
+Mit free kann nur Speicher freigegeben werden, welcher mit calloc oder malloc reserviert wurde und welcher vorher noch nicht freigegeben wurde.
+
+```C
+#include<stdio.h>
+#include<stdlib.h>
+
+int main() {
+	int size=50;
+	int *array_test;
+	
+	// Speicher reservieren
+	array_test = (int *) calloc(size, sizeof(int));
+
+	// Speicher freigeben
+	free(array_test);
+	
+	return 0;
+}
 ```
