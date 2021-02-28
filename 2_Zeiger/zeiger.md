@@ -29,4 +29,4 @@ printf("Zeiger-Wert: %d\n", *zeiger); // Greife auf Wert der Variable via Pointe
 
 Quelle:
 
-1. Fischer E.: Zeiger in C. C-HowTo. Online: https://www.c-howto.de/tutorial/zeiger/, Zugriff: 28-02-2021.
+1. Fischer E.: Zeiger in C. C-HowTo (2008). Online: https://www.c-howto.de/tutorial/zeiger/, Zugriff: 28-02-2021.
