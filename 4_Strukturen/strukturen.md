@@ -33,6 +33,7 @@ strcpy(studentTheo.studWohnort, "Buxtehude");
 printf("Name: %s\n", studentTheo.studName);
 ```
 
+
 Quelle:
 
 1. Fischer E.: Zeiger in C. C-HowTo (2008). Online: https://www.c-howto.de/tutorial/strukturierte-datentypen/strukturen/, Zugriff: 28-02-2021.
