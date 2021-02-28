@@ -21,7 +21,7 @@ void *malloc(size_t size);
 In diesem Beispielprogramm hat der Benutzer durch eine Tastatureingabe die Möglichkeit, die Array-Größe zu bestimmen. 
 Mit sizeof(int) wird die benötigte Größe zur Speicherung eines Integer-Wertes erhalten. 
 Die Gesamtgröße ist abhängig von der Anzahl der Elemente. Die Einzelgröße wird dabei noch mit der gewünschten Anzahl multipliziert. 
-Da malloc einen void-Zeiger liefert, muss in diesem Fall die Rückgabe gecastet werden mit (int *****), um einen einen int-Zeiger zu erhalten.
+Da malloc einen void-Zeiger liefert, muss in diesem Fall die Rückgabe gecastet werden mit (int *), um einen einen int-Zeiger zu erhalten.
 Das Casten ist nicht unbedingt notwendig, da der void-Zeiger automatisch in den richtigen Typ transformiert wird. 
 Es ist jedoch sauberer und erleichtert die Arbeit für die spätere Verwendung des Codes.
 
