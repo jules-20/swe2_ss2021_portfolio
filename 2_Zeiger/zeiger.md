@@ -15,7 +15,7 @@ Anschließend wird ein Zeiger mit dem Namen "zeiger" erstellt. Wichtig ist hierb
 dass der Pointer vom gleichen Datentyp ist, wie die Variable, auf die gezeigt werden soll.
 Der Zeiger charakterisiert sich bei der Deklarierung durch das Asterisk-Zeichen mit dem der Variablenname beginnt.
 Nach der Deklaration zeigt der Pointer noch auf keinen sinnvollen Wert.
-Dem Pointer wird nun der Speicherort der Variable "zahl" zugewiesen. Wichtig ist hierbei der das Kaufmanns-Und & vor dem Variablennamen.
+Dem Pointer wird nun der Speicherort der Variable "zahl" zugewiesen. Wichtig ist hierbei das & vor dem Variablennamen.
 Ausgegeben wird der Wert der Variable, in dem der Pointername beginnend mit dem Asterisk-Zeichen angegeben wird.
 
 
@@ -25,3 +25,8 @@ int *zeiger; // Deklariere Pointer vom gleichen Datentyp
 zeiger = &zahl; // Weise Pointer die Adresse der Variable zu 
 printf("Zeiger-Wert: %d\n", *zeiger); // Greife auf Wert der Variable via Pointer
 ```
+
+
+Quelle:
+
+1. Fischer E.: Zeiger in C. C-HowTo. Online: https://www.c-howto.de/tutorial/zeiger/, Zugriff: 28-02-2021.
