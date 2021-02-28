@@ -93,6 +93,6 @@ int main() {
 
 Quellen:
 
-1. Wolf J.: Dynamische Speicherverwaltung. Online: http://openbook.rheinwerk-verlag.de/c_von_a_bis_z/014_c_dyn_speicherverwaltung_001.htm, Zugriff: 28-02-2021.
+1. Wolf J.: Dynamische Speicherverwaltung (2009). Online: http://openbook.rheinwerk-verlag.de/c_von_a_bis_z/014_c_dyn_speicherverwaltung_001.htm, Zugriff: 28-02-2021.
 
-2. Fischer E.: Zeiger in C. C-HowTo. Online: https://www.c-howto.de/tutorial/arrays-felder/speicherverwaltung/, Zugriff: 28-02-2021.
+2. Fischer E.: Zeiger in C. C-HowTo (2008). Online: https://www.c-howto.de/tutorial/arrays-felder/speicherverwaltung/, Zugriff: 28-02-2021.
