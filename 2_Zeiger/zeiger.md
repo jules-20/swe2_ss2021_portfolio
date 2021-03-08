@@ -1,4 +1,4 @@
-Wenn große Datenmengen in Funktionen bearbeitet werden, geht dies stark zu Lasten der Performance und des Speicherplatzes.
+Wenn große Datenmengen in Funktionen bearbeitet werden, beeinflusst dies stark die Performance und den Speicherplatz.<br/>
 Um dies zu umgehen, werden Zeiger bzw. Pointer eingesetzt.
 
 Die Daten liegen in einem Speicher vor. Jeder Speicher hat eine spezifische Adresse.
